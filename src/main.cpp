@@ -13,3 +13,8 @@
 
 int touchPin = 3;
 int ledPin = 13;
+void setup() {
+    pinMode(touchPin, INPUT);
+    pinMode(ledPin, OUTPUT);
+    
+}
