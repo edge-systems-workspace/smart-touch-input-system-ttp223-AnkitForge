@@ -12,3 +12,4 @@
 
 
 int touchPin = 3;
+int ledPin = 13;
