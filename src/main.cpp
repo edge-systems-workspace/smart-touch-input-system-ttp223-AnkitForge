@@ -18,3 +18,14 @@ void setup() {
     pinMode(ledPin, OUTPUT);
     Serial.begin(9600);
 }
+void loop() {
+    int touchState = digitalRead(touchPin);
+    if (touchState == HIGH) {
+        digitalWrite(ledPin, HIGH);
+        Serial.println("Touch Detected");
+    } else {
+        digitalWrite(ledPin, LOW);
+        Serial.println("No Touch");
+    }
+    delay(200);
+}
